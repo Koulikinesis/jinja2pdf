@@ -1,0 +1,205 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GENCON 1994 Uniform General Charter</title>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th{
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                border-top: 1px solid black;
+                padding: 8px;
+                text-align: left;
+            }
+            td {                 
+                padding-bottom: 32px;
+                padding-right: 32px;
+                padding-top: 32px;
+                padding-left: 8px;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                text-align: left;
+                max-width:200px;
+                word-wrap:break-word;
+            }
+            tbody {                 
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+            }
+            .styled-div {
+    border-bottom: 1px solid black;;
+}
+            .section, .subsection {
+            margin-bottom: 20px;
+        }
+        .section-title, .subsection-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .section-content, .subsection-content {
+            margin-left: 20px;
+        }
+        
+        </style>
+    </head>
+    <body>
+        <h1>GENCON 1994 Uniform General Charter</h1>
+        <table>
+            <tr>
+                <th>1. Shipbroker {{ data.shipbroker.clause }}</th>
+                <th>2. Place and Date {{ data.place_and_date.clause }}</th>
+            </tr>
+            <tr>
+                <td>{{ data.shipbroker.value }}</td>
+                <td>{{ data.place_and_date.value }}</td>
+            </tr>
+            <tr>
+                <th>3. Owners/Place of business {{ data.owners_place_of_business.clause }}</th>
+                <th>4. Charterers/Place of business {{ data.charterers_place_of_business.clause }}</th>
+            </tr>
+            <tr>
+                <td>{{ data.owners_place_of_business.value }}</td>
+                <td>{{ data.charterers_place_of_business.value }}</td>
+            </tr>
+            <tr>
+                <th>5. Vessel's name {{ data.vessels_name.clause }}</th>
+                <th>6. GT/NT {{ data.gt_nt.clause }}</th>
+            </tr>
+            <tr>
+                <td>{{ data.vessels_name.value }}</td>
+                <td>{{ data.gt_nt.value }}</td>
+            </tr>
+            <tr>
+                <th>7. DWT all told on summer load line in metric tons (abt.) {{ data.dwt.clause }}</th>
+                <th>8. Present position {{ data.present_position.clause }}</th>
+            </tr>
+            <tr>
+                <td>{{ data.dwt.value }}</td>
+                <td>{{ data.present_position.value }}</td>
+            </tr>
+            <tr>
+                <th>9. Expected ready to load (abt.) {{ data.expected_ready_to_load.clause }}</th>
+                <th>10. Loading port or place {{ data.loading_port_or_place.clause }}</th>
+            </tr>
+            <tr>
+                <td>{{ data.expected_ready_to_load.value }}</td>
+                <td>{{ data.loading_port_or_place.value }}</td>
+            </tr>
+            <tr>
+                <th>11. Discharging port or place {{ data.discharging_port_or_place.clause }}</th>
+                <th>12. Cargo {{ data.cargo.clause }}</th>
+            </tr>
+            <tr>
+                <td>{{ data.discharging_port_or_place.value }}</td>
+                <td>{{ data.cargo.value }}</td>
+            </tr>
+            <tr>
+                <th>13. Freight rate {{ data.freight_rate.clause }}</th>
+                <th>14. Freight payment {{ data.freight_payment.clause }}</th>
+            </tr>
+            <tr>
+                <td>{{ data.freight_rate.value }}</td>
+                <td>{{ data.freight_payment.value }}</td>
+            </tr>
+            <tr>
+                <th>15. State if vessel's cargo handling gear shall not be used {{ data.cargo_handling_gear.clause }}</th>
+                <th>16. Laytime {{ data.laytime.for_loading.clause }}</th>
+            </tr>
+            <tr>
+                <td>{{ data.cargo_handling_gear.value }}</td>
+                <td>
+                    Loading: {{ data.laytime.for_loading.value }}<br>
+                    Discharging: {{ data.laytime.for_discharging.value }}<br>
+                    Total: {{ data.laytime.total_laytime.value }}
+                </td>
+            </tr>
+            <tr>
+                <th>17. Shippers/Place of business {{ data.shippers_place_of_business.clause }}</th>
+                <th>18. Agents (loading) {{ data.agents_loading.clause }}</th>
+            </tr>
+            <tr>
+                <td>{{ data.shippers_place_of_business.value }}</td>
+                <td>{{ data.agents_loading.value }}</td>
+            </tr>
+            <tr>
+                <th>19. Agents (discharging) {{ data.agents_discharging.clause }}</th>
+                <th>20. Demurrage rate and manner payable {{ data.demurrage_rate_and_manner_payable.clause }}</th>
+            </tr>
+            <tr>
+                <td>{{ data.agents_discharging.value }}</td>
+                <td>{{ data.demurrage_rate_and_manner_payable.value }}</td>
+            </tr>
+            <tr>
+                <th>21. Cancelling date {{ data.cancelling_date.clause }}</th>
+                <th>22. General Average to be adjusted {{ data.general_average_to_be_adjusted.clause }}</th>
+            </tr>
+            <tr>
+                <td>{{ data.cancelling_date.value }}</td>
+                <td>{{ data.general_average_to_be_adjusted.value }}</td>
+            </tr>
+            <tr>
+                <th>23. Freight Tax {{ data.freight_tax.clause }}</th>
+                <th>24. Brokerage commission and to whom payable {{ data.brokerage_commission.clause }}</th>
+            </tr>
+            <tr>
+                <td>{{ data.freight_tax.value }}</td>
+                <td>{{ data.brokerage_commission.value }}</td>
+            </tr>
+            <tr>
+                <th>25. Law and Arbitration {{ data.law_and_arbitration.clause }}</th>
+                <th>26. State maximum amount for small claims/shortened arbitration {{ data.maximum_amount_for_small_claims.clause }}</th>
+            </tr>
+            <tr>
+                <td class="styled-div">{{ data.law_and_arbitration.value }}</td>
+                <td class="styled-div">{{ data.maximum_amount_for_small_claims.value }}</td>
+            </tr>
+        </table>
+        <br><br>
+        <div>It is mutually agreed that this Contract shall be performed subject to the conditions contained in this Charter Party which shall include Part I as well as Part II. In the event of a conflict of conditions, the provisions of Part I shall prevail over those of Part II to the extent of such conflict.</div>
+        <table>
+            <tr>
+                <th >Signature(Owners)</th>
+                <th >Signature(Charterers)</th>
+            </tr>
+            <tr>
+                <td class="styled-div"></td>
+                <td class="styled-div"></td>
+            </tr>
+        </table>
+        {% for _ in range(18) %}
+            <br></br>
+        {% endfor %}
+        <h1>Charter Party Agreement</h1>
+        {% macro render_section(section) %}
+        <div class="section">            
+            <div class="section-title">{{ section.id }}.  {{ section.title }}</div>
+            <div class="section-content">{{ section.content }}</div>
+            {% if section.subsections %}
+                <div class="subsections">
+                    {% for subsection in section.subsections %}
+                        <div class="subsection">                            
+                            <div class="subsection-title">{{ subsection.id }}. {{ subsection.title }}</div>
+                            <div class="subsection-content">{{ subsection.content }}</div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    {% endmacro %}
+
+    <div class="content">
+        {% for section in data.sections %}
+            {{ render_section(section) }}
+        {% endfor %}
+    </div>
+    
+    
+    
+    </body>
+</html>

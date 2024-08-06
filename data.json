@@ -1,0 +1,74 @@
+{   
+    "shipbroker": 
+        {"value": "ABC Shipbrokers abcd", 
+        "clause": "( Cl.10 )"
+    },
+    "place_and_date": 
+        {"value": "London, 2024-07-30", 
+        "clause": ""
+    },
+    "owners_place_of_business": 
+        {"value": "XYZ Shipping Co., New York", 
+        "clause": "(Cl. 1)"
+    },
+    "charterers_place_of_business": {"value": "Charterers Ltd., Singapore", "clause": "(Cl. 1)"},
+    "vessels_name": {"value": "MV Example", "clause": "(Cl. 1)"},
+    "gt_nt": {"value": "5000/3000", "clause": "(Cl. 1)"},
+    "dwt": {"value": "10000 metric tons", "clause": "(Cl. 1)"},
+    "present_position": {"value": "Anchored at Port of Rotterdam", "clause": "(Cl. 1)"},
+    "expected_ready_to_load": {"value": "2024-08-15", "clause": "(Cl. 1)"},
+    "loading_port_or_place": {"value": "Hamburg", "clause": "(Cl. 1)"},
+    "discharging_port_or_place": {"value": "Shanghai", "clause": "(Cl. 1)"},
+    "cargo": {"value": "20000 metric tons of coal", "clause": "(Cl. 1)"},
+    "freight_rate": {"value": "$10 per metric ton, payable on delivery", "clause": "(Cl. 4)"},
+    "freight_payment": {"value": "USD, via wire transfer to ABC Bank, Account No. 12345678", "clause": "(Cl. 4)"},
+    "cargo_handling_gear": {"value": "Not to be used", "clause": "(Cl. 5)"},
+    "laytime": {
+        "for_loading": {"value": "3 days", "clause": "(Cl. 6)"},
+        "for_discharging": {"value": "4 days", "clause": "(Cl. 6)"},
+        "total_laytime": {"value": "7 days", "clause": "(Cl. 6)"}
+    },
+    "shippers_place_of_business": {"value": "Shippers Co., Hamburg", "clause": "(Cl. 6)"},
+    "agents_loading": {"value": "Agents Ltd., Hamburg", "clause": "(Cl. 6)"},
+    "agents_discharging": {"value": "Agents Ltd., Shanghai", "clause": "(Cl. 6)"},
+    "demurrage_rate_and_manner_payable": {"value": "$5000 per day, payable at discharge", "clause": "(Cl. 7)"},
+    "cancelling_date": {"value": "2024-08-31", "clause": "(Cl. 9)"},
+    "general_average_to_be_adjusted": {"value": "York-Antwerp Rules", "clause": "(Cl. 12)"},
+    "freight_tax": {"value": "For the Owners' account", "clause": "(Cl. 13)"},
+    "brokerage_commission": {"value": "2.5% to ABC Shipbrokers", "clause": "(Cl. 15)"},
+    "law_and_arbitration": {"value": "19(a), London", "clause": "(Cl. 19)"},
+    "maximum_amount_for_small_claims": {"value": "$5000", "clause": "(Cl. 19)"},   
+
+
+    "sections": [
+        {   "id": 1,       
+            "title": "Cargo Handling Gear",
+            "content": "Unless the Vessel is gearless or unless it has been agreed between the parties that the Vessel's gear shall not be used and stated as such in Box 15, the Owners shall throughout the duration of loading/discharging give free use of the Vessel's cargo handling gear and of sufficient motive power to operate all such cargo handling gear. All such equipment to be in good working order. Unless caused by negligence of the stevedores, time lost by breakdown of the Vessel's cargo handling gear or motive power - pro rata the total number of cranes/winches required at that time for the loading/discharging of cargo under this Charter Party - shall not count as laytime or time on demurrage. On request the Owners shall provide free of charge cranemen/winchmen from the crew to operate the Vessel's cargo handling gear, unless local regulations prohibit this, in which latter event shore labourers shall be for the account of the Charterers. Cranemen/winchmen shall be under the Charterers' risk and responsibility and as stevedores to be deemed as their servants but shall always work under the supervision of the Master."
+        },
+        {
+            "id": 2, 
+            "title": "Stevedore Damage",
+            "content": "The Charterers shall be responsible for damage (beyond ordinary wear and tear) to any part of the Vessel caused by Stevedores. Such damage shall be notified as soon as reasonably possible by the Master to the Charterers or their agents and to their Stevedores, failing which the Charterers shall not be held responsible. The Master shall endeavour to obtain the Stevedores' written acknowledgement of liability. The Charterers are obliged to repair any stevedore damage prior to completion of the voyage, but must repair stevedore damage affecting the Vessel's seaworthiness or class before the Vessel sails from the port where such damage was caused or found. All additional expenses incurred shall be for the account of the Charterers and any time lost shall be for the account of and shall be paid to the Owners by the Charterers at the demurrage rate."
+        },
+        {
+            "id": 3, 
+            "title": "Laytime",
+            "subsections": [
+                {
+                    "id": "a", 
+                    "title": "Separate laytime for loading and discharging",
+                    "content": "The cargo shall be loaded within the number of running days/hours as indicated in Box 16, weather permitting, Sundays and holidays excepted, unless used, in which event time used shall count. The cargo shall be discharged within the number of running days/hours as indicated in Box 16, weather permitting, Sundays and holidays excepted, unless used, in which event time used shall count."
+                },
+                {   "id": "b", 
+                    "title": "Total laytime for loading and discharging",
+                    "content": "The cargo shall be loaded and discharged within the number of total running days/hours as indicated in Box 16, weather permitting, Sundays and holidays excepted, unless used, in which event time used shall count."
+                },
+                {
+                    "id": "c", 
+                    "title": "Commencement of laytime (loading and discharging)",
+                    "content": "Laytime for loading and discharging shall commence at 13.00 hours, if notice of readiness is given up to and including 12.00 hours, and at 06.00 hours next working day if notice given during office hours after 12.00 hours. Notice of readiness at loading port to be given to the Shippers named in Box 17 or if not named, to the Charterers or their agents named in Box 18. Notice of readiness at the discharging port to be given to the Receivers or, if not known, to the Charterers or their agents named in Box 19. If the loading/discharging berth is not available on the Vessel's arrival at or off the port of loading/discharging, the Vessel shall be entitled to give notice of readiness within ordinary office hours on arrival there, whether in free pratique or not, whether customs cleared or not. Laytime or time on demurrage shall then count as if she were in berth and in all respects ready for loading/discharging provided that the Master warrants that she is in fact ready in all respects. Time used in moving from the place of waiting to the loading/discharging berth shall not count as laytime. If, after inspection, the Vessel is found not to be ready in all respects to load/discharge time lost after the discovery thereof until the Vessel is again ready to load/discharge shall not count as laytime. Time used before commencement of laytime shall count."
+                }                
+            ]
+        }
+    ]
+}

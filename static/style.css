@@ -1,0 +1,9 @@
+/* static/style.css */
+@page {
+    size: A4;
+    margin: 1cm;
+    @bottom-center {
+        content: "Common footer text - Page " counter(page);
+        font-size: 10px;
+    }
+}
